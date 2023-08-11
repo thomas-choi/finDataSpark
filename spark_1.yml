@@ -23,7 +23,7 @@ services:
       - SPARK_USER=spark
   spark-worker-10:
     image: docker.io/bitnami/spark:3.4.1
-    container_name: work_10
+    container_name: spworker-10
     network_mode: "host"
     depends_on:
       - spark-master
@@ -50,7 +50,7 @@ services:
        - /etc/group:/etc/group
   spark-worker-11:
     image: docker.io/bitnami/spark:3.4.1
-    container_name: work_11
+    container_name: spworker-11
     network_mode: "host"
     depends_on:
       - spark-master
@@ -78,7 +78,7 @@ services:
        - /home/thomas:/home/thomas
   spark-worker-12:
     image: docker.io/bitnami/spark:3.4.1
-    container_name: work_12
+    container_name: spworker-12
     network_mode: "host"
     depends_on:
       - spark-master

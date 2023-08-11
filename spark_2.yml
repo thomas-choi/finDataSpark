@@ -2,7 +2,7 @@ version: "3.3"
 services:
   spark-worker-21:
     image: docker.io/bitnami/spark:3.4.1
-    container_name: sp_work_21
+    container_name: spworker-20
     network_mode: "host"
     environment:
       - SPARK_MODE=worker
@@ -27,7 +27,7 @@ services:
        - /etc/group:/etc/group
   spark-worker-22:
     image: docker.io/bitnami/spark:3.4.1
-    container_name: sp_work_22
+    container_name: spworker-21
     network_mode: "host"
     environment:
       - SPARK_MODE=worker
